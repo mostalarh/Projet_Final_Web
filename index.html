@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet final : Roguelike</title>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <table id="grilleHtml">
+            <tbody id="grilleBody">
+
+            </tbody>
+        </table>
+        <aside>
+            <table>
+                <tr>
+                    <td>
+                        <button id="left">&larr;</button>
+                    </td>
+                    <td>
+                        <button id="up">&uarr;</button>
+                    </td>
+
+                    <td>
+                        <button id="right">&rarr;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="down">&darr;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button id="Reinitialiser">Reinitialiser</button></td>
+                </tr>
+            </table>
+        </aside>
+        <div id="#scoreniveauInfo">
+            <h2>Score: <span id="score">0</span></h2>
+            <h2>niveau: <span id="niveau">1</span></h2>
+        </div>
+        <div id="vies" style="color:red">&#10084; <span id="vie">3</span></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mostafa Larhrib / Oumar Bayero Barry<br></p>
+    </footer>
+
+
+</body>
+
+</html>

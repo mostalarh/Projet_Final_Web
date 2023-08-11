@@ -1,0 +1,47 @@
+Plan du code JAVASCRIPT
+
+//DEFINITION DES VARIABLES GLOBALES
+
+//Classe Game:
+    Construction de la grille pour jouer
+        Initialisation des parametres par les valeurs entrees
+        appel des QUATRE METHODES :  
+        initialiserGrille();
+        placerElements();
+        addEventListeners();
+        updategrille();
+    
+    DEFINITION DES METHODES
+        I-initialiserGrille()
+        II-placerElements()
+        --Methode de verification et calcul de distance avant de placer les elements
+        --a-procheDuJoueurOuMonstres()
+        --b-procheDesTresors()
+        --c-distance()
+            II-1 placerElementAleatoire()
+        III-addEventListeners()
+            III-1 keyboard
+            III-2 boutons html y compris le bouton reinitialiser
+            
+                A--deplacerJoueur()
+                B--Deplacer les monstres()
+                    Methodes utuilises dans la methodes de deplacement 
+                    1-verifierEmplacement()
+                    2-trouverEmplacement()
+                    3-trouverEmplacements ()
+                    4-updatePosition()
+            IV-updategrille
+                IV-1 GETCLASSENAME()
+            
+            V- Methodes pour demarrer, rejouer et finir le jeu 
+                    startgame()
+                    rejouer()
+                    rejouerDesDebut()
+                    gameOver()
+
+
+NB : la structure du code donne la possibilite de d'ajouter quelques ligne pour soit donner la possibilite
+au joueur de definir la taille de la grille soit de la definir selon un niveau choisi.
+
+
+Realisé par :  Mostafa Larhrib / Oumar Bayero Barry

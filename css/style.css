@@ -1,0 +1,105 @@
+/*Definir background color de la page */
+body{
+    background-color: #e9bf86;
+}
+/*Style du main : grille , bouton , score,vies,niveau */
+main {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+/*Style de la grille , cellules par type d'elt */
+#grilleHtml {
+    border-collapse: collapse;
+}
+
+#grilleHtml td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid #444;
+    background-color:rgb(220, 210, 210);
+}
+
+.mur{
+    background-image:url(../img/icone_mur.png);
+    background-size:cover;
+    font-size: 0;
+}
+.monstre{
+    background-image: url(../img/icone_monstre.png);
+    background-size:cover;
+    font-size: 0;
+}
+.joueur{
+    background-image: url(../img/icone\ pirate.png);
+    background-size: cover;
+    font-size: 0;
+}
+.tresor{
+    background-image: url(../img/icone_tresor.png);
+    background-size: cover;
+    font-size: 0;
+}
+
+/*style pour les bouton regroupes dans un tableau */
+table {
+    border-collapse: collapse;
+    margin-left: 10px;
+    text-align: center;
+}
+
+button {
+    width:fit-content;
+    height: 40px;
+    font-size: 24px;
+    background-color: rgb(48, 47, 47);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(96, 96, 179, 0.527);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #057d29;
+}
+
+/* Style score et niveau */
+div {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-align: right;
+    z-index: 1;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+/*Style vies */
+#vies{
+   position: absolute;
+    top: 10px;
+    left: 20px;
+    text-align: left;
+    z-index: 1; 
+    font-size: 18px;
+}
+#vie{
+    color: black;
+    font-weight: bold;
+}
+/*Style footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    left:30%;
+    font-style: italic;
+    font-weight: bold;
+  }
